@@ -1,0 +1,28 @@
+{
+  "name": "newsite-cms",
+  "version": "0.1.0",
+  "private": true,
+  "description": "Strapi 5 CMS — newsite",
+  "scripts": {
+    "develop": "strapi develop",
+    "start": "strapi start",
+    "build": "strapi build",
+    "console": "strapi console",
+    "strapi": "strapi"
+  },
+  "dependencies": {
+    "@strapi/plugin-users-permissions": "5.7.0",
+    "@strapi/strapi": "5.7.0",
+    "better-sqlite3": "^12.2.0",
+    "pg": "8.13.1",
+    "react": "^18.3.1",
+    "react-dom": "^18.3.1",
+    "react-router-dom": "^6.28.0",
+    "styled-components": "^6.1.14"
+  },
+  "engines": {
+    "node": ">=18.0.0 <=22.x.x",
+    "npm": ">=6.0.0"
+  },
+  "license": "MIT"
+}

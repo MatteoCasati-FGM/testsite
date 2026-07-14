@@ -1,0 +1,34 @@
+{
+  "collectionName": "components_blocks_banners",
+  "info": {
+    "displayName": "Banner",
+    "icon": "bell"
+  },
+  "options": {},
+  "attributes": {
+    "heading": {
+      "type": "string"
+    },
+    "text": {
+      "type": "text"
+    },
+    "buttonLabel": {
+      "type": "string"
+    },
+    "buttonUrl": {
+      "type": "string"
+    },
+    "variant": {
+      "type": "enumeration",
+      "enum": ["solid", "outline", "soft"],
+      "default": "solid",
+      "required": true
+    },
+    "align": {
+      "type": "enumeration",
+      "enum": ["left", "center"],
+      "default": "left",
+      "required": true
+    }
+  }
+}

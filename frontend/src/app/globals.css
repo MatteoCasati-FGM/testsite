@@ -1,0 +1,209 @@
+/* I valori --color-*, --font-*, --radius arrivano dal Tema Strapi (layout.tsx) */
+
+* {
+  box-sizing: border-box;
+}
+
+html,
+body {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: var(--font-body);
+  color: var(--color-text);
+  background: var(--color-bg);
+  line-height: 1.6;
+}
+
+h1,
+h2,
+h3 {
+  font-family: var(--font-heading);
+  line-height: 1.2;
+}
+
+a {
+  color: var(--color-primary);
+  text-decoration: none;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+.btn {
+  display: inline-block;
+  padding: 0.7rem 1.4rem;
+  background: var(--color-primary);
+  color: #fff;
+  border-radius: var(--radius);
+  font-weight: 600;
+}
+
+/* layout */
+.site-header,
+.site-footer {
+  display: flex;
+  align-items: center;
+  gap: 1.5rem;
+  padding: 1rem 2rem;
+}
+
+.site-header {
+  border-bottom: 1px solid #e5e7eb;
+}
+
+.site-header__logo {
+  font-weight: 700;
+  font-size: 1.2rem;
+  color: var(--color-text);
+}
+
+.nav ul {
+  display: flex;
+  gap: 1.25rem;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.site-header .btn {
+  margin-left: auto;
+}
+
+.locale-switcher {
+  display: flex;
+  gap: 0.5rem;
+  margin-left: 1rem;
+  font-size: 0.85rem;
+}
+
+.locale-switcher a {
+  color: #6b7280;
+}
+
+.locale-switcher a.is-active {
+  color: var(--color-primary);
+  font-weight: 700;
+}
+
+.site-footer {
+  flex-direction: column;
+  align-items: flex-start;
+  border-top: 1px solid #e5e7eb;
+  margin-top: 3rem;
+  color: #6b7280;
+}
+
+.site-footer__links {
+  display: flex;
+  gap: 1.25rem;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+/* blocchi */
+.block {
+  max-width: 1100px;
+  margin: 0 auto;
+  padding: 3rem 2rem;
+}
+
+.hero {
+  position: relative;
+  text-align: center;
+  color: #fff;
+  overflow: hidden;
+}
+
+.hero__bg {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  z-index: -1;
+  filter: brightness(0.55);
+}
+
+.hero__inner {
+  padding: 6rem 2rem;
+}
+
+.hero h1 {
+  font-size: clamp(2rem, 5vw, 3.5rem);
+  margin: 0 0 1rem;
+}
+
+.text-image {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 2rem;
+  align-items: center;
+}
+
+.text-image--right .text-image__media {
+  order: 2;
+}
+
+.cta {
+  text-align: center;
+  background: #f3f4f6;
+  border-radius: var(--radius);
+}
+
+/* Banner: stile e allineamento scelti nel CMS tra varianti predefinite qui */
+.banner .banner__inner {
+  border-radius: var(--radius);
+  padding: 2rem;
+}
+
+.banner h2 {
+  margin-top: 0;
+}
+
+.banner--center .banner__inner {
+  text-align: center;
+}
+
+.banner--center .banner__inner h2,
+.banner--center .banner__inner p {
+  margin-left: auto;
+  margin-right: auto;
+  max-width: 640px;
+}
+
+/* variante solid: pieno, colore primario */
+.banner--solid .banner__inner {
+  background: var(--color-primary);
+  color: #fff;
+}
+.banner--solid .banner__btn {
+  background: #fff;
+  color: var(--color-primary);
+}
+
+/* variante outline: bordo, sfondo trasparente */
+.banner--outline .banner__inner {
+  border: 2px solid var(--color-primary);
+  color: var(--color-text);
+}
+
+/* variante soft: tinta chiara del primario */
+.banner--soft .banner__inner {
+  background: color-mix(in srgb, var(--color-primary) 12%, #fff);
+  color: var(--color-text);
+}
+
+@media (max-width: 720px) {
+  .text-image {
+    grid-template-columns: 1fr;
+  }
+  .site-header {
+    flex-wrap: wrap;
+  }
+}

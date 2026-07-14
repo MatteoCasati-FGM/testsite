@@ -1,0 +1,30 @@
+# deps
+node_modules/
+
+# next
+frontend/.next/
+frontend/out/
+frontend/next-env.d.ts
+
+# strapi
+cms/.tmp/
+cms/.cache/
+cms/build/
+cms/dist/
+cms/.strapi/
+cms/public/uploads/*
+!cms/public/uploads/.gitkeep
+
+# env
+.env
+.env.local
+*.local
+
+# logs
+*.log
+
+# os / editor
+.DS_Store
+Thumbs.db
+.idea/
+.vscode/

@@ -1,0 +1,45 @@
+{
+  "kind": "singleType",
+  "collectionName": "themes",
+  "info": {
+    "singularName": "theme",
+    "pluralName": "themes",
+    "displayName": "Theme",
+    "description": "Design token globali del sito"
+  },
+  "options": {
+    "draftAndPublish": false
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "primary": {
+      "type": "string",
+      "default": "#2563eb"
+    },
+    "background": {
+      "type": "string",
+      "default": "#ffffff"
+    },
+    "text": {
+      "type": "string",
+      "default": "#111827"
+    },
+    "fontBody": {
+      "type": "string",
+      "default": "system-ui, sans-serif"
+    },
+    "fontHeading": {
+      "type": "string"
+    },
+    "radius": {
+      "type": "integer",
+      "default": 8
+    },
+    "logo": {
+      "type": "media",
+      "multiple": false,
+      "required": false,
+      "allowedTypes": ["images"]
+    }
+  }
+}

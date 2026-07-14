@@ -1,0 +1,27 @@
+{
+  "name": "newsite-frontend",
+  "version": "0.1.0",
+  "private": true,
+  "scripts": {
+    "dev": "next dev -p 3005",
+    "build": "next build",
+    "build:static": "cross-env BUILD_MODE=static next build",
+    "build:isr": "cross-env BUILD_MODE=isr next build",
+    "start": "next start",
+    "lint": "next lint"
+  },
+  "dependencies": {
+    "next": "^15.5.20",
+    "qs": "6.13.1",
+    "react": "19.0.0",
+    "react-dom": "19.0.0"
+  },
+  "devDependencies": {
+    "@types/node": "22.10.5",
+    "@types/qs": "6.9.17",
+    "@types/react": "19.0.7",
+    "@types/react-dom": "19.0.3",
+    "cross-env": "7.0.3",
+    "typescript": "5.7.3"
+  }
+}
